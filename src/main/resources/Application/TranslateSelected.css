@@ -1,0 +1,44 @@
+#close:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#minimize:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#maximize:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#PronounceButton:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+
+.button1:hover {
+    overflow: hidden;
+    -fx-border-color: White;
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-text-fill: red;
+}
+
+#translateButton {
+    overflow: hidden;
+    -fx-border-color: White;
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-text-fill: red;
+}
+
+#lookupButton {
+    overflow: hidden;
+    -fx-border-color: White;
+    -fx-background-color: #DA4D5B;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}

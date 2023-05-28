@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="552.0" prefWidth="526.0" style="-fx-background-radius: 15; -fx-background-color: fff; -fx-border-color: gray; -fx-border-radius: 15;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.InfoController">
+   <children>
+      <JFXTextArea fx:id="alert" editable="false" focusColor="WHITE" layoutX="150.0" layoutY="23.0" prefHeight="43.0" prefWidth="232.0" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="confirmButton" layoutX="213.0" layoutY="503.0" onMouseClicked="#getOption" prefHeight="34.0" prefWidth="109.0" stylesheets="@Confirm.css" text="Confirm" textFill="#ff4d4d">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="wordTextField" alignment="CENTER" editable="false" layoutX="54.0" layoutY="76.0" prefHeight="34.0" prefWidth="430.0" style="-fx-background-color: fff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: red;" text="Dictionary App">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="detailTextArea" layoutX="57.0" layoutY="126.0" prefHeight="356.0" prefWidth="422.0" style="-fx-border-color: red; -fx-border-radius: 4;" stylesheets="@textArea.css" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

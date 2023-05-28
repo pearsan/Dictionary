@@ -1,0 +1,88 @@
+#close:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#minimize:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#maximize:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+#PronounceButton:hover {
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+
+
+.button1:hover {
+    overflow: hidden;
+    -fx-border-color: White;
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-text-fill: red;
+}
+
+#lookupButton {
+    overflow: hidden;
+    -fx-border-color: White;
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-text-fill: red;
+}
+
+
+#speaker {
+    -fx-background-image: url("../Icon/volume.png");
+    -fx-background-position: center;
+    -fx-background-size: 30px;
+}
+
+#speaker:hover {
+    -fx-background-image: url("../Icon/selected_volume.png");
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#remove {
+    -fx-background-image: url("../Icon/remove.png");
+    -fx-background-position: center;
+    -fx-background-size: 30px;
+}
+
+#remove:hover {
+    -fx-background-image: url("../Icon/selected_remove.png");
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#fix {
+    -fx-background-image: url("../Icon/fix.png");
+    -fx-background-position: center;
+    -fx-background-size: 30px;
+}
+
+#fix:hover {
+    -fx-background-image: url("../Icon/selectex_fix.png");
+    -fx-background-position: center;
+    -fx-cursor: hand;
+}
+
+#trans {
+    -fx-background-image: url("../Icon/trans.png");
+}
+
+#infoButton {
+    -fx-background-image: url("../Icon/outline_info_white_24dp.png");
+    -fx-background-position: center;
+    -fx-background-size: 30px;
+}
+
+#infoButton:hover {
+    -fx-cursor: hand;
+
+}

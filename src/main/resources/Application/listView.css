@@ -1,0 +1,115 @@
+
+#listView {
+    -fx-background-color: #ffffffff;
+    -fx-background-radius: 8px 8px 8px 8px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px 0px 8px 8px;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+    -fx-font-size: 14;
+    -fx-font-family: "Segoe UI";
+}
+
+.list-cell {
+    -fx-padding: 12px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #2d78d6ff;
+}
+
+.list-cell:even {
+    -fx-background-color: #ffffffff;
+}
+
+.list-cell:odd {
+    -fx-background-color: #ffffffff
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #5fafefff;
+}
+
+.list-view .scroll-bar: vertical {
+    -fx-background-color: #ffffffff;
+    -fx-border-color: #ffffffff;
+    -fx-pref-width: 10px;
+    -fx-padding: 0px;
+    -fx-background-insets: 0px;
+}
+
+.list-view .scroll-bar: horizontal {
+    -fx-background-color: #ffffffff;
+    -fx-border-color: #ffffffff;
+    -fx-pref-height: 10px;
+    -fx-padding: 0px;
+    -fx-background-insets: 0px;
+}
+
+.list-view .scroll-bar: vertical .thumb, .list-view .scroll-bar: horizontal .thumb {
+    /*-fx-background-color: #535353ff;*/
+    -fx-background-color: #d62d2d;
+    -fx-background-radius: 2px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 4px;
+}
+
+.list-view .scroll-bar: vertical .thumb:hover, .list-view .scroll-bar: horizontal .thumb:hover {
+    -fx-background-color: #ef5f5f;
+}
+
+.list-view .scroll-bar: vertical .thumb:pressed, .list-view .scroll-bar: vertical .thumb:focused {
+    -fx-background-color: #d62d2d;
+}
+
+.list-view .scroll-bar: horizontal .thumb:pressed, .list-view .scroll-bar: horizontal .thumb:focused {
+    -fx-background-color: #d62d2d;
+}
+
+.list-view .scroll-bar:horizontal .track,
+.list-view .scroll-bar:vertical .track{
+    -fx-background-color: #ffffffff;
+    -fx-border-color: #ffffffff;
+    -fx-background-radius : 2px;
+}
+
+.list-view .scroll-bar:horizontal .increment-button ,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #ffffffff;
+    -fx-background-radius: 0px;
+    -fx-padding: 16px 0px 0px 0px;
+}
+
+.list-view .scroll-bar:vertical .track-background,
+.list-view .scroll-bar:horizontal .track-background {
+   -fx-background-color: #ffffffff;
+   -fx-background-insets: 0;
+   -fx-background-radius: 2px;
+}
+
+.list-view .scroll-bar:vertical .increment-button ,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #ffffffff;
+    -fx-background-radius: 0px;
+    -fx-padding: 0px 0px 0px 16px;
+}
+
+.list-view .scroll-bar .increment-arrow,
+.list-view .scroll-bar .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding: 16px 0px 0px 0px;
+}
+
+.list-view .scroll-bar:vertical .increment-arrow,
+.list-view .scroll-bar:vertical .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding: 0px 0px 0px 16px;
+}
+
+.list-view .scroll-bar .corner {
+    -fx-background-color: #ffffffff;
+    -fx-border-color: #ffffffff;
+    -fx-padding: 0px;
+}

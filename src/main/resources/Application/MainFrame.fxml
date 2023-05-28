@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="910.0" style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+    <children>
+        <AnchorPane prefHeight="458.0" prefWidth="182.0" style="-fx-background-color: #DA4D5B; -fx-background-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="67.0" prefWidth="186.0" style="-fx-background-color: #F35D44; -fx-background-radius: 10;">
+                    <children>
+                        <Label layoutX="14.0" layoutY="6.0" text="MENU" textFill="WHITE">
+                            <font>
+                                <Font size="23.0" />
+                            </font>
+                        </Label>
+                  <Pane layoutY="53.0" prefHeight="16.0" prefWidth="186.0" style="-fx-background-color: #F35D44; -fx-background-radius: 0;" />
+                    </children>
+                </Pane>
+                <JFXButton fx:id="addWord" buttonType="RAISED" layoutX="5.0" layoutY="188.0" onAction="#handleAddButton" prefHeight="34.0" prefWidth="146.0" style="-fx-border-color: #fff; -fx-border-radius: 20;" styleClass="button1" text="Add Word" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="35.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="translateButton" buttonType="RAISED" layoutX="5.0" layoutY="244.0" onMouseClicked="#handleTranslateButton" prefHeight="34.0" prefWidth="146.0" style="-fx-border-color: #fff; -fx-border-radius: 20;" styleClass="button1" text="Translate Text" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="35.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton layoutX="14.0" layoutY="409.0" prefHeight="34.0" prefWidth="46.0" style="-fx-border-radius: 20;" text=" " textFill="WHITE" AnchorPane.bottomAnchor="11.799999999999976" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="103.6" AnchorPane.topAnchor="409.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton fx:id="lookupButton" buttonType="RAISED" layoutX="2.0" layoutY="134.0" onMouseClicked="#handleLookupButton" prefHeight="34.0" prefWidth="146.0" style="-fx-border-color: #fff; -fx-border-radius: 20;" styleClass="button1" text="Look Up" textFill="WHITE" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="35.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane onMouseClicked="#handleLookupButton" prefHeight="200.0" prefWidth="200.0" />
+            <JFXButton fx:id="infoButton" layoutX="23.0" layoutY="559.0" onAction="#handleInfoButton" prefHeight="31.0" prefWidth="30.0" stylesheets="@LookupSelected.css" text=" " AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="147.0" />
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="transPane" layoutX="171.0" prefHeight="606.0" prefWidth="739.0" style="-fx-background-color: #FF9494; -fx-background-radius: 10;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="170.79999999999995" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextArea fx:id="textToTrans" layoutX="32.0" layoutY="103.0" prefHeight="440.0" prefWidth="305.0" promptText="Enter text..." style="-fx-border-color: #FF5F5F;" stylesheets="@textArea.css" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextArea>
+            <TextArea fx:id="transText" editable="false" layoutX="405.0" layoutY="103.0" prefHeight="440.0" prefWidth="306.0" style="-fx-border-color: #FF5F5F;" wrapText="true">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextArea>
+            <JFXButton fx:id="trans" layoutX="346.0" layoutY="292.0" onMouseClicked="#translateAction" prefHeight="46.0" prefWidth="46.0" stylesheets="@LookupSelected.css" text=" " />
+            <JFXToggleButton fx:id="toggle" layoutX="34.0" layoutY="38.0" text="English to Vietnamese" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </JFXToggleButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lookup" layoutX="171.0" prefHeight="606.0" prefWidth="739.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+              <AnchorPane layoutX="305.0" layoutY="15.0" prefHeight="590.0" prefWidth="380.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="15.0">
+                  <children>
+                  <TextArea fx:id="contentTextArea" editable="false" layoutX="41.0" layoutY="130.0" prefHeight="291.0" prefWidth="244.0" stylesheets="@textArea.css" wrapText="true" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="130.0">
+                     <font>
+                        <Font name="MyriadPro-Regular" size="20.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea fx:id="WordTitle" editable="false" layoutX="41.0" layoutY="53.0" prefHeight="55.0" prefWidth="218.0" stylesheets="@textArea.css" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="53.0">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </TextArea>
+                      <Pane layoutX="0.39999999999997726" layoutY="-15.0" prefHeight="46.0" prefWidth="380.0" style="-fx-background-color: #932152; -fx-background-radius: 10;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-15.0">
+                     <children>
+                        <Pane layoutX="16.0" layoutY="9.0" prefHeight="38.0" prefWidth="364.0" style="-fx-background-color: #932152;" />
+                     </children>
+                  </Pane>
+                  <JFXButton fx:id="speaker" layoutX="271.0" layoutY="79.0" onAction="#handlePronounButton" prefHeight="26.0" prefWidth="30.0" styleClass="button2" text=" " AnchorPane.rightAnchor="78.60000000000002" AnchorPane.topAnchor="79.0">
+                     <stylesheets>
+                        <URL value="@LookupSelected.css" />
+                        <URL value="@TranslateSelected.css" />
+                     </stylesheets>
+                  </JFXButton>
+                  <JFXButton fx:id="remove" layoutX="337.0" layoutY="79.0" onAction="#handleRemoveButton" prefHeight="26.0" prefWidth="30.0" styleClass="button2" stylesheets="@LookupSelected.css" text=" " AnchorPane.rightAnchor="12.600000000000023" AnchorPane.topAnchor="79.0" />
+                  <JFXButton fx:id="fix" layoutX="307.0" layoutY="78.0" onAction="#handleFixButton" prefHeight="31.0" prefWidth="30.0" stylesheets="@LookupSelected.css" text=" " AnchorPane.rightAnchor="42.60000000000002" AnchorPane.topAnchor="78.0" />
+                  </children>
+              </AnchorPane>
+              <AnchorPane prefHeight="605.0" prefWidth="380.0" style="-fx-background-color: #C93D4B;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="0.0">
+                  <children>
+                  <AnchorPane layoutX="19.0" layoutY="131.0" prefHeight="465.0" prefWidth="335.0" style="-fx-background-color: fff; -fx-background-radius: 20;">
+                     <children>
+                        <ListView fx:id="listView" layoutX="10.0" layoutY="13.0" onMouseClicked="#listViewSelectedWord" prefHeight="440.0" prefWidth="314.0" stylesheets="@listView.css" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="13.0" />
+                     </children>
+                  </AnchorPane>
+                      <TextField fx:id="SearchBar" alignment="CENTER" layoutX="23.0" layoutY="72.0" prefHeight="27.0" prefWidth="183.0" promptText="Search" style="-fx-background-color: #C93D4B; -fx-background-insets: 0; -fx-border-color: #fff; -fx-border-radius: 20; -fx-text-fill: white;" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="29.0" />
+                      <JFXButton layoutX="169.0" layoutY="70.0" text=" " AnchorPane.rightAnchor="19.79999999999999">
+                          <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../Icon/outline_search_white_24dp.png" />
+                                  </image>
+                              </ImageView>
+                          </graphic>
+                      </JFXButton>
+                  </children>
+              </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="maximize" fitHeight="31.0" fitWidth="24.0" layoutX="700.0" layoutY="3.0" onMouseClicked="#maxHandle" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="41.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../Icon/maximize.png" />
+         </image>
+      </ImageView>
+      <ImageView id="close" fx:id="close" fitHeight="31.0" fitWidth="24.0" layoutX="728.0" layoutY="3.0" onMouseClicked="#closeHandle" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../Icon/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="minimize" fitHeight="24.0" fitWidth="24.0" layoutX="672.0" layoutY="2.0" onMouseClicked="#minHandle" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="2.0">
+         <image>
+            <Image url="@../Icon/minimize.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
